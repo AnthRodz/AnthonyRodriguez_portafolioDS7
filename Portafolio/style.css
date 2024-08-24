@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr;
+    height: 100vh;
+  }
+
+  /* Barra de navegación superior */
+  .header {
+    grid-column: 1 / -1;
+    
+    
+     background-color: #0f0c29;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  h1{
+    font-size: 18px;
+  }
+
+  /* Barra de navegación lateral */
+  .sidebar {
+    background-color:#0f0c29 ;
+    padding: 20px;
+    border: 1px solid black;
+     
+  }
+
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar nav ul li {
+    margin-bottom: 30px;
+  }
+
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Contenido principal */
+  .main {
+    grid-column: 2 / -1;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: linear-gradient(70deg, #0f0c29, #1e5e98);
+  }
+
+  .section {
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+  h2 , h3{
+    color: white;
+    display: block;
+    font-size: 24px;
+  }
+
+  .portada{
+    border: 1px solid black;
+    background-color: #ff4500;
+  }
+
+  .secciones{
+    border: 1px solid black;
+  }
+
+  /*Carpetas*/
+
+  .folder {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .folder-item {
+    margin: 5px 0;
+  }
+  
+
+
+  .folder-name {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+  
+
+  .file-item {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .file-name {
+    cursor: pointer;
+    margin: 20px;
+    color: white;
+  }
+  
+  .duration {
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: #aaa;
+  }
+  
+  /* Estilos para simular la expansión/contracción */
+  .folder-item > .folder {
+    display: none;
+  }
+  
+  .folder-item.open > .folder {
+    display: block;
+  }
+  
+  /* Estilo para el ítem seleccionado */
+  .folder-item.selected > .folder-name,
+  .file-item.selected > .file-name {
+    background-color: #3a3a3a;
+  }
+  
+  /* Estilos para los iconos */
+  .fa-folder, .fa-file-pdf {
+    margin-right: 5px;
+  }
+  
+  .fa-folder {
+    color: #ffd700;  /* Color dorado para las carpetas */
+  }
+  
+  .fa-file-pdf {
+    color: #ff4500;  /* Color rojo-naranja para los PDFs */
+  }

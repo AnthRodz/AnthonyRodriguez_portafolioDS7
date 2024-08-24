@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.left-column {
+    background-color: #1a2b47;
+    color: white;
+    padding: 20px;
+    width: 30%;
+}
+.right-column {
+    padding: 20px;
+    width: 70%;
+}
+.profile-img {
+    width: 100%;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+h1, h2 {
+    margin-top: 0;
+}
+.section {
+    margin-bottom: 20px;
+}
+.work-item {
+    margin-bottom: 15px;
+}
+.work-title {
+    font-weight: bold;
+}
+.work-date {
+    color: #666;
+}
+ul {
+    padding-left: 20px;
+}
+.download-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.download-btn:hover {
+    background-color: #3949ab;
+}
